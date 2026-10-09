@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Start screen (browsers need a tap before they allow sound) -->
+  <div id="intro" class="intro">
+    <p>May regalo para sa iyo 🎁</p>
+    <button id="open" type="button">Open</button>
+  </div>
+
+  <main class="scene">
+    <div class="cake-wrap" id="cake" role="button" tabindex="0" aria-label="Tap the candle to blow it out">
+      <div class="candle">
+        <div class="flame" id="flame"></div>
+        <div class="stick"></div>
+      </div>
+
+      <div class="cake">
+        <div class="icing">
+          <span class="drip d1"></span>
+          <span class="drip d2"></span>
+          <span class="drip d3"></span>
+          <span class="drip d4"></span>
+          <span class="drip d5"></span>
+          <span class="drip d6"></span>
+        </div>
+        <div class="sponge"></div>
+      </div>
+      <div class="plate"></div>
+    </div>
+
+    <h1 id="greeting"></h1>
+    <p id="name" class="name"></p>
+    <p id="hint" class="hint">Tap the candle to make a wish ✨</p>
+  </main>
+
+  <!-- Your own song: put song.mp3 in the same folder -->
+  <audio id="song" src="happy.mp3" loop preload="auto"></audio>
+
+  <div class="controls">
+    <button id="mute" type="button" class="small" aria-label="Mute or unmute">🔊</button>
+    <button id="replay" type="button" class="small" aria-label="Play the song again">🎵 Replay</button>
+  </div>
+</body>
+</html>
